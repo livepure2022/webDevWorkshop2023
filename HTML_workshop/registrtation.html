@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <form action="" id="formInfo" style="width: 500px; margin: auto;padding: 20px;">
+        <h1>Registartion</h1>
+        <hr>
+        <div>
+            <input class="form-control" id="userName" name="userName" placeholder="Name" type="text" required>
+        </div><br>
+
+        <div>
+            <input class="form-control" name="mobileNo" id="mobileNo" placeholder="Mobile No." type="tel" required>
+        </div><br>
+
+        <div>
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div><br>
+
+        <div>
+            <input class="form-control" id="birthDate" name="birthDate" placeholder="Birth date" type="date">
+        </div><br>
+
+        <div>
+            <b>Gender :</b>
+            <label for="">Male</label>
+            <input id="gender" name="gender" type="radio" value="male">
+            <label for="">Female</label>
+            <input id="gender" name="gender" type="radio" value="female">
+
+        </div><br>
+
+        <div>
+            <select class="form-control" name="education" id="education">
+                <option value="null">education</option>
+                <option value="B.E">CA</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="Other">Other</option>
+            </select>
+        </div><br>
+
+        <div>
+            <input class="form-control" id="collegeName" name="collegeName" placeholder="College Name" type="text" />
+        </div><br>
+
+        <div>
+            <input type="button" onclick="formData()" class="btn btn-success" value="Submit" id="sub">
+            <button onclick="print()" class="btn btn-warning">Print</button>
+        </div><br>
+
+        <div>
+            <input id="red" name="color" type="radio" onclick="colorChangerRed()">Red
+
+            <input id="blue" name="color" type="radio" onclick="colorChangerBlue()">Blue
+
+            <input id="green" name="color" type="radio" onclick="colorChangerGreen()">Green
+
+        </div>
+    </form>
+
+    <p id="para"></p>
+
+
+    <!-- <script src="./form.js"></script> -->
+</body>
+
+</html>
