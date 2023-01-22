@@ -1,0 +1,16 @@
+h1 {
+    color: rgb(66, 235, 32);
+    background-color: yellow;
+    border: 5px solid red;
+}
+
+p {
+    color: rgb(251, 7, 7);
+    border: 5px groove red;
+}
+
+body {
+    background-color: burlywood;
+    /* border: 5px dotted red; */
+    border: 5px double red;
+}
