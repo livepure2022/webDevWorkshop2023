@@ -1,0 +1,25 @@
+<!-- <h1>Home component</h1>
+<h1>My name is {{userName}} and {{userAge}}</h1> -->
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Mobile No</th>
+        <th>Email Id</th>
+    </tr>
+    <tr>
+        <td>{{userName}} </td>
+        <td>{{mobileNo}} </td>
+        <td>{{emailId}} </td>
+    </tr>
+</table>
+
+
+<button (click)="btnClicked()">Submit</button>
+<h1>clicked value {{clickedValue}}</h1>
+
+
+<input type="text" name="userName" [(ngModel)]="userValue">
+
+
+{{userValue}}
